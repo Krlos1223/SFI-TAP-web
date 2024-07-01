@@ -1,15 +1,110 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Antonio Piedrahita</title>    
+    <link rel="stylesheet" href="styles.css"> <!-- Estilos CSS -->
+    <style>
+        body {
+            position: relative; /* Establece el cuerpo como relativo */
+            margin: 0; /* Elimina el margen predeterminado del body */
+            padding: 0; /* Elimina el relleno predeterminado del body */
+            background-color: #E6DDDD;                        
+        }                                                    
+        body::before {
+            content: ''; /* Contenido vacío */
+            position: absolute; /* Posicionamiento fijo */
+            top: -3%; /* Ajuste superior a 0 */
+            left: 0%; /* Ajuste izquierdo a 0 */
+            width: 25%; /* Ancho del 100% */
+            height: 110%; /* Altura del 100% */
+            background-color: #DFDEDE; /* Color de la segunda capa */
+            border: 3px solid #707070; /* Borde sólido de 5px de ancho con color #707070 */
+            z-index: -1; /* Coloca la capa detrás de todo */
+        }
+        footer {
+            margin-top: -500px;
+        }       
+    </style>
+    <style>
+        /* Estilos para centrar la imagen del logo */
+        header {
+            text-align: center; /* Alinea el contenido al centro */
+        }
+        header img {
+            max-width: 70%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
+            height: auto; /* Hace que la altura de la imagen se ajuste automáticamente para mantener la proporción */
+            position: absolute; /* Establece la posición absoluta */
+            top: 170px; /* Mueve la imagen 50px hacia abajo */
+            right: 220px; /* Mueve la imagen 50px hacia la derecha */
+            border-radius: 90px;
+        }
+        header h1 {
+            position: absolute; /* Establece la posición absoluta */
+            top: -3 0px; /* Ajusta la posición vertical */
+            left: 62%; /* Centra horizontalmente */
+            transform: translateX(-50%); /* Centra horizontalmente */
+            font-size: 4em; /* Ajusta el tamaño del texto */
+            /* Puedes ajustar el tamaño y posición vertical según tus necesidades */
+        }
+    </style>
+     <style>
+        nav {
+            margin-left: 50px; /* Agrega un pequeño margen izquierdo */
+        }       
+        nav img:nth-child(1) {
+            position: relative; /* Establece la posición relativa solo para la primera imagen */
+            top: 0px; /* Mueve la primera imagen hacia arriba */
+            max-width: 80px; /* Cambia el ancho máximo de las imágenes de los botones */
+            height: auto; /* Hace que la altura de la imagen se ajuste automáticamente para mantener la proporción */
+            display: inline-block; /* Hace que la imagen se comporte como un bloque en línea */
+            vertical-align: middle; /* Alinea verticalmente la imagen */
+        }
+        nav span:nth-child(1) {
+            position: relative;
+            top: 20px;
+            font-size: 25px; /* Ajusta el tamaño del texto del enlace */
+            vertical-align: middle; /* Alinea verticalmente el texto con la imagen */
+            margin-left: 10px; /* Agrega un pequeño margen a la izquierda del texto */
+        }
+        nav a {
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+        }
+        ul {
+            list-style-type: none; /* Elimina los puntos de lista */
+            padding: 0; /* Elimina el relleno predeterminado de la lista */
+        }
+        li {
+            position: relative; /* Establece el posicionamiento relativo para los elementos <li> */
+            margin-bottom: 45px; /* Agrega un pequeño espacio entre cada elemento de la lista */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagenes\logo_taller.jpg" alt="Logo Taller Antonio Piedrahita">
+        <h1>SFI-TAP</h1> <!-- Título centrado -->
+    </header>
+    <section id="inicio">        
+    </section>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="registro.jsp"><span><img src="imagenes\boton_registro.png" alt="Registro"> Registro</span></a></li>
+                <li><a href="nivel_de_acceso.html"><span><img src="imagenes\boton_ingresar.png" alt="Ingresar"> Ingresar</span></a></li>
+                <li><a href="nosotros.html"><span><img src="imagenes\boton_nosotros.png" alt="Nosotros"> Nosotros</span></a></li>
+                <li><a href="contactanos.html"><span><img src="imagenes\boton_contacto.png" alt="Contáctanos"> Contáctanos</span></a></li>
+                <li><a href="configuracion.html"><span><img src="imagenes\boton_configuracion.png" alt="Configuración"> Configuración</span></a></li>
+            </ul>
+        </nav>
+    </section>
+   
+    
+    <!-- Contenido de la página -->
+    
+    <footer>
+        <!-- Aquí va el pie de página -->
+    </footer>    
+</body>
 </html>
